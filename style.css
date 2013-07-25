@@ -1,0 +1,122 @@
+*{
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body{
+	margin:0;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+}
+a{
+	color:#6190AA;
+	text-decoration: none;
+}
+a.no-color{
+	color:black;
+}
+#wrapper{
+	min-height:480px;
+	position: absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	background-clip: border-box;
+	background-image:url('images/avatar.jpg');
+	background-origin: padding-box;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	z-index: 1;
+}
+#background{
+	display: none;
+	width:100%;
+}
+#feature, #signin, #credit, .modal, .confirm{
+	background-color: #FFF;
+	padding: 20px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	z-index: 2;
+}
+.modal, .confirm{
+	z-index: 3;
+}
+#feature{
+	position: absolute;
+	left:0px;
+	top:0px;
+	margin: 100px;
+}
+	#narc{
+		padding:5px 10px;
+	}
+	.narcissus, .followers, #delta{
+		padding:0px 3px;
+		background-color: rgb(192, 233, 255);/*#7BB4D3*/
+	}
+#signin{
+	position: absolute;
+	bottom:100px;
+	right:100px;
+	width:350px;
+	text-align: center;
+}
+	#signin-btn{
+		display: block;
+		cursor:pointer;
+		width:158px;
+		margin:10px auto 0px auto;
+	}
+#credit{
+	position: absolute;
+	left:0px;
+	bottom:0px;
+	border-radius: 0px;
+	border-top-right-radius: 3px;
+}
+@media(max-width: 512px){
+	#background{
+		display: block;
+	}
+	#feature, #signin, #credit{
+		position: static;
+		margin:0px;
+		width:100%;
+	}
+	#signin, #credit{
+		text-align: center;
+	}
+}
+.modal{
+	display: none;
+	position: absolute;
+	left:50%;
+	top:50%;
+	width:320px;
+	height:140px;
+	margin-left: -150px;
+	margin-top: -70px;
+	text-align: center;
+}
+	.modal a{
+		text-decoration: none;
+		color:black;
+	}
+	.confirm{
+		display: block;
+		width:100px;
+		position: absolute;
+		bottom:10px;
+		left:50%;
+		margin-left: -50px;
+		padding:10px 20px;
+		background-color: #EEE;
+		cursor:pointer;
+	}
+.show{
+	display: block;
+}
