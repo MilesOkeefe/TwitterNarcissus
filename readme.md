@@ -10,6 +10,8 @@ There really is no point.
 
 But hey, it's a $6 domain and 5 hours of my time.
 
+PS: Twitter inc, if you feel this infringes on your trademark, contact me and I'll take it down ASAP.
+
 
 How to Setup/Run
 ================
@@ -25,3 +27,4 @@ How to Setup/Run
 5. That's it.
 
 	There's no database or any dependencies besides PHP and file_put_contents() being enabled, which normally isn't an issue.
+
