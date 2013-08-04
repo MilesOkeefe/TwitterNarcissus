@@ -8,7 +8,6 @@ Of those who have signed in on this page, the user with the highest follower cou
 
 There really is no point. 
 
-But hey, it's a $6 domain and 5 hours of my time.
 
 PS: Twitter inc, if you feel this infringes on your trademark, contact me and I'll take it down ASAP.
 
@@ -27,4 +26,11 @@ How to Setup/Run
 5. That's it.
 
 	There's no database or any dependencies besides PHP and file_put_contents() being enabled, which normally isn't an issue.
+
+How it Works
+============
+On every page load, the background and favicon are static, while the username and follower count are dynamically retrieved from a local text file which servers as a single key:value database.
+
+When a user logs in, his/her follower count is checked with the Twitter API. If it is higher than the follower count of the last highest record (retrieved from a local text file), then the new highest follower user's avatar url is retrieved from the Twitter API and downloaded. Additionally, the text file which serves as a database is updated.
+
 
